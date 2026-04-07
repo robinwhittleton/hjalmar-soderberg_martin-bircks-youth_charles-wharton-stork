@@ -30,9 +30,18 @@ section[epub|type~="dedication"] > *{
 }
 /* End centered dedications */
 
+/* Letters */
 footer{
 	margin-top: 1em;
 	text-align: right;
+}
+
+[epub|type~="z3998:salutation"] + p{
+	text-indent: 0;
+}
+
+p[epub|type~="z3998:salutation"]{
+	font-variant: small-caps;
 }
 
 /* Verse */
